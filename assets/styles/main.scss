@@ -8,11 +8,11 @@ $grid-gap: .6rem;
 $grid-gap-sm: #{$grid-gap / 2};
 
 // Fonts
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@500&display=swap');
 
 html {
     box-sizing: border-box;
-    font-family: "Caveat", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    font-family: "Teko", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
     -moz-osx-font-smoothing: grayscale;
@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3 {
     margin: 0;
-    font-family: "Permanent Marker";
+    font-family: "Audiowide";
 }
 
 a {
@@ -81,11 +81,10 @@ ul {
     }
 
     .label {
-        width: 8rem;
+        width: 7rem;
         padding: $grid-gap-sm;
         background-color: $color-prim;
         color: $color-sec;
-        text-align: right;
     }
 
     .component__header {
@@ -111,6 +110,7 @@ ul {
 
         nav {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin-left: auto;
 
@@ -155,7 +155,8 @@ ul {
             .content {
                 display: flex;
                 flex-direction: column;
-                width: 30rem;
+                padding: $grid-gap-sm;
+                padding-top: 0;
                 >div:not(:last-child) {
                     margin-bottom: $grid-gap-sm;
                 }
@@ -164,6 +165,9 @@ ul {
     }
 
     .launches-page {
+      h2 {
+        text-align: center;
+      }
         ul {
             display: flex;
             flex-wrap: wrap;
@@ -176,4 +180,10 @@ ul {
         background-color: $color-prim;
         color: $color-sec;
     }
+
+    @media(max-width: 400px) {
+      .logo {
+        display: none;
+      }
+  }
 }
