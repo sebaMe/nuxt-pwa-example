@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-pwa",
+  "version": "1.0.0",
+  "description": "My posh Nuxt.js project",
+  "author": "merker.s",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.10.3",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.0",
+    "sass-loader": "^8.0.2"
+  }
+}
