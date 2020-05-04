@@ -39,12 +39,17 @@ a {
     padding: 0 $grid-gap;
     color: $color-sec;
     text-decoration: none;
+    transition: all .2s ease-in-out;
     &:visited {
         color: $color-sec;
     }
     &:hover {
         background-color: $color-sec;
         color: $color-prim;
+    }
+    &.nuxt-link-active {
+        border-top: solid .2rem;
+        border-bottom: solid .2rem;
     }
 }
 
@@ -143,6 +148,7 @@ ul {
               flex-direction: column;
               transition: all .3s cubic-bezier(.25,.8,.25,1);
               box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+              cursor: pointer;
 
               &:hover {
                   box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
